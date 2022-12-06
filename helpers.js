@@ -24,4 +24,5 @@ const commDiv = (a, b) => {
   return result;
 };
 
+
 module.exports.commDiv = commDiv;

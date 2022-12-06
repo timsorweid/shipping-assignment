@@ -27,7 +27,6 @@ module.exports = class Optimizer{
                 this.matrix[r].push(this.calculateSS(this.drivers[r].normalizedName, this.shipments[c].normalizedAddress));
             };
         };  
-        return this.matrix;
     };
 
     calculateSS (driver, address) {
@@ -50,9 +49,20 @@ module.exports = class Optimizer{
         return baseSS + bonus;
     };
 
-    get optimizedIndices() {
-        this.indices = new Munkres(this.matrix);
+    get calculateOptimizedIndices() {
+       this.indices = new Munkres(this.matrix);
     };
+
+    get calculateTotalSS() {
+       this.totalCost = this.indices.reduce((acc, index) => acc + this.matrix[index[0]][index[1]], 0);
+        
+    };
+
+    prettyOutput() {
+        const text = this.indices.map(value => `Driver: ${this.drivers[value[0]].name}\nShipment: ${this.shipments[value[1]].name}\n ----`).concat(`Total Suitability Score: ${this.totalCost}`);
+        text.forEach(match => console.log(match));
+    }
+    
 
 };
 

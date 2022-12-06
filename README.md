@@ -11,4 +11,6 @@
 
 -    Does it make sense for the secret algorithm to be in its own class?
 -    Should I separate out global values into their own file, e.g. units array?
+-    For functions which exist outside of a class, where is the best place for them?
 -    Is there a better way stylistically to break up the work? Does it matter computationally for this project?
+-    Am I using getters correctly or should these be methods instead?

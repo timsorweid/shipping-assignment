@@ -30,7 +30,13 @@ const names = ["Everardo Welch Sorweid",
 
 const optimizer = new Optimizer(names, shipments);
 optimizer.createMatrix;
-optimizer.optimizedIndices;
+optimizer.calculateOptimizedIndices;
+optimizer.calculateTotalSS;
+optimizer.prettyOutput();
+
+
+
+
 
 
 // Generate the matrix and arrays

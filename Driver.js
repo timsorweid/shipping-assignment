@@ -1,5 +1,5 @@
 module.exports = class Driver {
-    constructor(name,) {
+    constructor(name) {
         this.name = name;
     };
 

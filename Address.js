@@ -5,11 +5,11 @@ module.exports = class Address {
     };
 
     get normalizedAddress() {
-            this.name = this.name.replace(/\s/g, '').replace(/\d+/g, ''); // don't make me figure out how to do both in one regex. TODO figure out how to remove non letters
+            this.normalizedName = this.name.replace(/\s/g, '').replace(/\d+/g, ''); // don't make me figure out how to do both in one regex. TODO figure out how to remove non letters
             this.units.forEach(unit => {
-                this.name = this.name.replace(unit, '');
+                this.normalizedName = this.normalizedName.replace(unit, '');
             });
-            return this.name;
+            return this.normalizedName;
     };
 };
 
