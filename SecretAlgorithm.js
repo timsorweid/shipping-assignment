@@ -1,6 +1,7 @@
 const helpers = require('./helpers');
 const Driver = require('./Driver');
 const Address = require('./Address');
+const Munkres = require('./node_modules/munkres-js');
 
 const evenShipmentMultiplier = 1.5;
 const oddShipmentMultiplier = 1;
@@ -18,16 +19,14 @@ module.exports = class Optimizer{
 
     get createMatrix() { // TODO write a check to ensure shipments counts are >= names
         
-        // there's probably a more elegant way to build this matrix, but whatever
+        // there's probably a more elegant way to build this matrix, but this works
         this.matrix = new Array();
         for (let r = 0; r < this.drivers.length; r++){
             this.matrix.push(new Array());
             for (let c = 0; c < this.shipments.length; c++){
                 this.matrix[r].push(this.calculateSS(this.drivers[r].normalizedName, this.shipments[c].normalizedAddress));
             };
-        };
-
-        console.log(this.matrix);   
+        };  
         return this.matrix;
     };
 
@@ -50,6 +49,11 @@ module.exports = class Optimizer{
  
         return baseSS + bonus;
     };
+
+    get optimizedIndices() {
+        this.indices = new Munkres(this.matrix);
+    };
+
 };
 
 //module.exports.calculateSS = calculateSS; 

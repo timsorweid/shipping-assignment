@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "platform science code exercise",
   "main": "main.js",
-
   "scripts": {
     "test": "node main.js"
   },
   "author": "tim sorweid",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "munkres-js": "^1.2.2"
+  }
 }
