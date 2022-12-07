@@ -9,6 +9,7 @@
   "author": "tim sorweid",
   "license": "ISC",
   "dependencies": {
-    "munkres-js": "^1.2.2"
+    "munkres-js": "^1.2.2",
+    "temp-path": "^1.0.0"
   }
 }

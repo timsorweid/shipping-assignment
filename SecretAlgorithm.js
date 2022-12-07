@@ -27,6 +27,7 @@ module.exports = class Optimizer{
                 this.matrix[r].push(this.calculateSS(this.drivers[r].normalizedName, this.shipments[c].normalizedAddress));
             };
         };  
+        return this.matrix;
     };
 
     calculateSS (driver, address) {
@@ -50,11 +51,11 @@ module.exports = class Optimizer{
     };
 
     get calculateOptimizedIndices() {
-       this.indices = new Munkres(this.matrix);
+       return this.indices = new Munkres(this.matrix);
     };
 
     get calculateTotalSS() {
-       this.totalCost = this.indices.reduce((acc, index) => acc + this.matrix[index[0]][index[1]], 0);
+       return this.totalCost = this.indices.reduce((acc, index) => acc + this.matrix[index[0]][index[1]], 0);
         
     };
 
