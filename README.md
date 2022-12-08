@@ -4,7 +4,8 @@
 
 -    Make sure node is installed
 -    Clone repo `gh repo clone timsorweid/shipping-assignment`
--    Run the application `node main.js StreetAddresses.txt Drivers.txt`
+-    Run the application `npm run start`
+-    If you want to run the application on different input files, be sure to update the start script in `package.json`
 
 ### Running tests
 

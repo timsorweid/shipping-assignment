@@ -4,7 +4,8 @@
   "description": "platform science code exercise",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node main.js StreetAddresses.txt Drivers.txt"
   },
   "author": "tim sorweid",
   "license": "ISC",
