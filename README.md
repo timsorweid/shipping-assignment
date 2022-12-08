@@ -2,9 +2,9 @@
 
 ### How to run
 
-Make sure node is installed  
-Clone repo `gh repo clone timsorweid/shipping-assignment`  
-Run the application `node main.js StreetAddresses.txt Drivers.txt`
+-    Make sure node is installed
+-    Clone repo `gh repo clone timsorweid/shipping-assignment`
+-    Run the application `node main.js StreetAddresses.txt Drivers.txt`
 
 ### Running tests
 
