@@ -1,7 +1,8 @@
-'use strict';
+"use strict";
 
 const getFileData = require(`./GetFileData`);
-const Optimizer = require('./SecretAlgorithm');
+const Optimizer = require("./SecretAlgorithm");
+
 const [shipments, names] = getFileData.getInputArrays();
 const optimizer = new Optimizer(names, shipments);
 

@@ -1,5 +1,15 @@
 ## Platform Science Android Coding Challenge
 
+### How to run
+
+Make sure node is installed
+Clone repo `gh repo clone timsorweid/shipping-assignment`
+Run the application `node main.js StreetAddresses.txt Drivers.txt`
+
+### Running tests
+
+`npm test`
+
 ### Assumptions
 
 -    For the sake of counting vowels and consonants in names, the letter y is treated as a vowel
@@ -14,3 +24,4 @@
 -    For functions which exist outside of a class, where is the best place for them?
 -    Is there a better way stylistically to break up the work? Does it matter computationally for this project?
 -    Am I using getters correctly or should these be methods instead?
+-    What other more complicated tests could I have written?

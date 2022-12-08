@@ -4,12 +4,14 @@
   "description": "platform science code exercise",
   "main": "main.js",
   "scripts": {
-    "test": "node main.js"
+    "test": "jest"
   },
   "author": "tim sorweid",
   "license": "ISC",
   "dependencies": {
-    "munkres-js": "^1.2.2",
-    "temp-path": "^1.0.0"
+    "munkres-js": "^1.2.2"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
