@@ -1,4 +1,4 @@
-## Platform Science Android Coding Challenge
+## Shipping Assignment Coding Challenge
 
 ### How to run
 
@@ -19,9 +19,9 @@
 
 ### Areas for feedback
 
--    Does it make sense for the secret algorithm to be in its own class?
--    Should I separate out global values into their own file, e.g. units array?
--    For functions which exist outside of a class, where is the best place for them?
+-    Does it make sense for the secret algorithm to be in its own class, the way I did it?
+-    Should I separate out global values into their own file, e.g. units array? I left them in SecretAlgorithm.js
+-    For functions which exist outside of a class, where is the best place for them? I put them in various helper files
 -    Is there a better way stylistically to break up the work? Does it matter computationally for this project?
 -    Am I using getters correctly or should these be methods instead?
 -    What other more complicated tests could I have written?
