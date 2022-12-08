@@ -2,8 +2,8 @@
 
 ### How to run
 
-Make sure node is installed
-Clone repo `gh repo clone timsorweid/shipping-assignment`
+Make sure node is installed\n
+Clone repo `gh repo clone timsorweid/shipping-assignment`\n
 Run the application `node main.js StreetAddresses.txt Drivers.txt`
 
 ### Running tests
