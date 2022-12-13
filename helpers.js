@@ -1,3 +1,17 @@
+/**
+ * NOTE(tyler):
+ * would be nice to have readable names
+ * Sometimes it can seem like overkill but
+ * being as clear with the names, even if you know gcd is
+ * greatestCommonDivisor it helps future coders
+ *
+ * same with commonDivisor
+ *
+ * There is a balance that can sometimes be difficult to find where
+ * the name is very clear but not absurdly long.
+ *
+ *
+*/
 const gcd = (a, b) => {
      if (a == 0) {
           return b;
